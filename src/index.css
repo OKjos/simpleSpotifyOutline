@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  height: 1000px;
+}
+
+.SideBar {
+  position: fixed;
+  background-color: rgb(104, 104, 104);
+  top: 0;
+  width: 350px;
+  height: calc(500vh - 100px);
+}
+
+.SideBar ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.SideBar li {
+  display: flex;
+  align-items: center;
+}
+
+.SideBar li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+
+.library-btn {
+  background-color: rgb(104, 104, 104);
+  border: none;
+  color: white;
+  font-size: medium;
+}
+
+.library-btn .btn-text {
+  display: inline-block;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 30px;
+  margin-left: 0px;
+}
+
+.search-btn {
+  background-color: rgb(104, 104, 104);
+  border: none;
+  color: white;
+  font-size: medium;
+}
+
+.home-btn {
+  background-color: rgb(104, 104, 104);
+  border: none;
+  color: white;
+  font-size: medium;
+}
+
+.spot-text {
+  font-size: 2em;
+}
+
+.home-btn .btn-text,
+.search-btn .btn-text {
+  display: inline-block;
+  height: 20px;
+  vertical-align: middle;
+  line-height: 0px;
+  margin-left: 0px;
+}
+
+.SideBar li a span {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.SideBar li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.Header {
+  background-color: rgb(17, 17, 17);
+  height: 100px;
+}
+
+.SignUp {
+  position: fixed;
+  left: calc(85vw - 20px);
+  width: 4%;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: black;
+  color: rgb(199, 199, 199);
+  margin-top: 30px;
+}
+
+.LogIn {
+  position: fixed;
+  margin-top: 30px;
+  left: calc(90vw - 20px);
+  width: 4%;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+#library-popup.show {
+  display: block;
+  top: 160px;
+  left: 130px;
+  width: 250px;
+  font-size: small;
+}
+
+#library-popup {
+  display: none;
+  position: absolute;
+  background-color: rgb(31, 106, 245);
+  color: white;
+  padding: 10px;
+  z-index: 1;
+  border-radius: 0% 5% 5% 20%;
+}
+
+.popupNotNow {
+    position: relative;
+    left: 150px;
+    background-color: rgb(31, 106, 245);
+    border: none;
+}
+  
+.popupLogin {
+    position: absolute;
+    left: 220px;
+    border-radius: 4px;
+    border: none;
+}
+
+#create-popup {
+    display: none;
+    position: absolute;
+    background-color: rgb(31, 106, 245);
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 0% 5% 5% 20%;
+}
+
+#create-popup.create-show {
+    display: block;
+    top: 220px;
+    left: 155px;
+    width: 250px;
+    font-size: small;
+}
+
+#liked-popup {
+    display: none;
+    position: absolute;
+    background-color: rgb(31, 106, 245);
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 0% 5% 5% 20%;
+}
+
+#liked-popup.liked-show {
+    display: block;
+    top: 250px;
+    left: 140px;
+    width: 250px;
+    font-size: small;
+}
+
+.SearchBar {
+    position: absolute;
+    left: 31%;
+    top: 30px;
+    height: 50px;
+    width: 23%;
+    border-radius: 50px;
+    background-image: url('./logos/search.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    font-size: large;
+}
+
+
+
+.rightarrow-btn {
+    position: absolute;
+    margin-top: 30px;
+    left: 475px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+}
+
+.rightarrow {
+    height: 50px;
+}
+
+.leftarrow-btn {
+    position: absolute;
+    margin-top: 30px;
+    left: 400px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    
+}
+
+.leftarrow {
+    height: 50px;
+}
+
+.create {
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 0px;
+    margin-left: 0px;
+}
+
+.create-btn {
+    background-color: rgb(104, 104, 104);
+    border: none;
+    color: white;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+
+.likedSongs-btn {
+    background-color: rgb(104, 104, 104);
+    border: none;
+    color: white;
+    font-size: medium;
+    vertical-align: middle;
+}
+
+.likedSongs {
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 0px;
+    margin-left: 0px;
+}
